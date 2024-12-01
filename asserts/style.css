@@ -47,7 +47,10 @@ body {
     border-radius: 5px;
     background-color: #078D84;
 }
-
+.btn:hover{
+    background-color: #fff;
+    color: #078D84;
+}
 .hero{
     width: 100%;
     height: 580px;
@@ -212,6 +215,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.hire-btn:hover{
+    background-color: transparent;
+    color: #078D84;
+}
+.port-btn:hover{
+    background-color: #078D84;
+    color: #fff;
+}
 .about{
     background-color: #fff;
     width: 100%;
@@ -235,12 +247,11 @@ body {
 .about-content h5{
     color: #1C1C57;
     font-family: 'Inter';
-
     margin-top: 90px;
 }
 .about-content h2{
-    font-size: 40px;    font-family: 'Inter';
-
+    font-size: 40px;    
+    font-family: 'Inter';
     color: #1C1C57;
     margin-top: -10px;
     font-weight: 400;
@@ -279,7 +290,10 @@ body {
 .about-content .hire-btn{
     margin-top: 40px;
 }
-
+.about-content .hire-btn:hover{
+    background-color: transparent;
+    color: #078D84;
+}
 .exp{
     background-color: #F6F8FF;
     width: 100%;
@@ -440,6 +454,11 @@ body {
     border-radius: 5px;
     background-color: #078D84;
 }
+
+.portfolio-btn:hover{
+    background-color: transparent;
+    color: #078D84;
+}
 .cta{
     width: 100%;
     margin-top: 40px;
@@ -470,6 +489,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.cta-hire:hover{
+    background-color: #1C1C57;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.cta-port:hover{
+    background-color: #fff;
+    color: #1C1C57;
+    border: 1px solid #1C1C57;
+}
 .cta-hire{
     color: #1C1C57;
     padding: 10px;
@@ -495,6 +526,54 @@ body {
     background: transparent;
     border-radius: 5px;
 }
+
+.contact{
+    width: 100%;
+}
+
+.contact-head{
+    text-align: center;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.82px;
+}
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-field{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input{
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.contact-form .button{
+    width: 50%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.contact-form .button:hover {
+    background-color: #1C1C57;
+    color: white;
+}
+
+
 
 .footer{
     width: 100%;
@@ -542,49 +621,6 @@ body {
     display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 480px){
     .nav{
         width: 100%;
@@ -622,18 +658,24 @@ body {
         padding: 0;
     }
     .hero-parent{
+        width: 100%;
         height: 600px;
         display: flex;
         flex-direction: row;
-        
     }
     .hero-child-1{
         width: 100%;
-        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
     }
     .container{
-        width: 100%;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 30px;
         margin-top: 40px;
     }
@@ -655,8 +697,6 @@ body {
         letter-spacing: 0;
     }
     .container p{
-        width: 300px;
-        text-align: start;
         margin-left: 0;
         text-align: center;
         margin-top: -20px;
@@ -666,16 +706,19 @@ body {
     }
     .hero-child-2{
         width: 100%;
-        margin-left: -280px;
+        margin-left: -320px;
 
     }
     .hero-child-2 img{
-        width: 260px;
+        width: 100%;
         
     }
     .hero-btn{
-        margin-top: 0;
-        margin-left: 60px;
+        margin-top: 40px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .partners{
@@ -733,14 +776,11 @@ body {
         letter-spacing: -0.82px;
     }
     .service-container2{
-        width: 300px;
+        width: 100%;
     }
     .service-container2 p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 0;
         line-height: 150%;
-        color: #3E3E70;
         font-size: 14px;
         text-align: center;
     }
@@ -772,10 +812,8 @@ body {
     }
     
     .service-cards .card-1 p{
-        margin-top: -20px;
+        width: 100%;
         text-align: center;
-
-        font-size: 15px;
     }
     .about{
         background-color: #fff;
@@ -1054,6 +1092,52 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .contact{
+        width: 100%;
+    }
+    
+    .contact-head{
+        text-align: center;
+    }
+    .contact-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .form-field{
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-field input{
+        padding: 10px;
+        border: 2px solid black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form .button{
+        width: 98%;
+        padding: 5px;
+        background: transparent;
+        border: 2px solid black;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+    .contact-form .button:hover {
+        background-color: #1C1C57;
+        color: white;
+    }
+    
+    
     .footer{
         width: 100%;
         height: auto;
@@ -1081,5 +1165,24 @@ body {
         margin-bottom: 20px;
         border: 1px solid white;
         background: transparent;
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .links ul a{
+        text-decoration: none;
+        color: #fff;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
